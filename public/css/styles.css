@@ -1,0 +1,49 @@
+article {
+    background-color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+article {
+display: block;
+}
+
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+}
+
+header nav {
+    font-size: 12px;
+}
+header{
+background-color: #EAC926;
+}
+header ul li  {
+list-style-type: none;
+}
+header ul li a {
+
+    text-decoration: none;
+    color: black;
+}
+div.burger-menu i {
+background-color: #0044AA;
+border-radius: 5px;
+color: #FFF;
+font-size: 20px;
+height: 30px;
+width: 30px;
+margin: 10px 0 20px 0px;
+padding: 10px;
+
+}
+
+header div.input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: darkgrey;
+    width: 250px;
+}
