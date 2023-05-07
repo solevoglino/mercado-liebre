@@ -1,49 +1,568 @@
-article {
-    background-color: #FFF;
-    text-align: center;
-    margin-bottom: 10px;
-}
-article {
-display: block;
+/*esto es consigna clase 20*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+html *{
+    font-family: "Roboto", sans-serif;
+}
 
-
+/*
 body {
+    width: 100%;
     font-family: "Roboto", sans-serif;
     background-color: #ebebeb;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+/* Header*/
+
+header{
+  
+    background-color: #EAC926;
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vw;
+    padding-bottom: 5vx;
+} 
+
+main {
+    background-color: #ebebeb;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+
+/*se va a pisar esto mas abajo por especifidad*/
 header nav {
     font-size: 12px;
 }
-header{
-background-color: #EAC926;
+ 
+/*header*/
+.main-navbar{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    
 }
-header ul li  {
-list-style-type: none;
-}
-header ul li a {
 
+.left-navbar{
+    justify-content: flex-start;
+    display: flex;
+    width: 50vw;
+}
+
+.rigth-navbar{
+    justify-content: flex-end;
+    display: flex;
+    width: 50vw;
+    
+}
+
+.left-navbar ul{
+ 
+    display: flex;
+    flex-wrap: nowrap;    
+}
+
+.rigth-navbar ul{
+    display: flex;
+    flex-wrap: nowrap;    
+}
+
+.left-navbar ul li{
+    list-style-type: none;
+    padding:  15px;
+    font-size: 12px;
+
+}
+
+.rigth-navbar ul li {
+    list-style-type: none;
+    padding:  15px;
+    font-size: 12px;
+}
+
+.left-navbar ul li a{
     text-decoration: none;
     color: black;
+    font-size: 12px;
 }
-div.burger-menu i {
-background-color: #0044AA;
-border-radius: 5px;
-color: #FFF;
-font-size: 20px;
-height: 30px;
-width: 30px;
-margin: 10px 0 20px 0px;
-padding: 10px;
+
+.rigth-navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 
 }
 
-header div.input {
+header ul li {
+    list-style-type: none;
+    
+}
+
+header ul li a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+
+img.logo{
+    height: auto;
+    width: 49vw;
+}
+
+.banner {
+    width: 100vw;
+    height: auto;
+    margin-bottom: -1vw;
+}
+
+ul li a i{
+    margin-right: 10px;
+}
+
+.main-header-top-bar{
+ display: flex;
+ position: relative;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-bottom: 5vw;
+ 
+}
+
+.nav-search {
+   
+    height: 30px;
+    justify-content: space-around;
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.search{
+    display: flex;
+    height: 4vw;
+    width: 99%;     /*S*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 2vw;
+    border: 0px 
+   
+    
+    
+   
+}
+/*BOTON DE LUPA*/
+.buttonForm{
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    height: 4vw;
+    width: 9%;
+    margin-top: 2vw;
+  
+}
+/*imagen de la lupa ubicacion*/
+.buttonForm i {
+    height: 100%;
+    margin-top: 50%;
+    justify-self: center;
+  
+}
+
+.search::placeholder{
+    color:rgb(196,196,196)
+}
+
+.copy-header{
+  flex-wrap: wrap;
+  justify-content: center;
+   align-content: center;
+   display: flex;
+}
+
+/*menu burger*/
+.burger-menu .icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*chequear valores*/
+button.menu{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 20px 0px;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-color: #0044AA;
+       
+
+}
+/*ver si saco esto que pasa*/
+button .menu i{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*main*/
+
+/*centro los articulos
+article {
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    /*oculta contenido que se salen de la caja del elemento
+article {
+    overflow: hidden;
+    }  
+  */  
+    .articulos img {
+    width: 100%;
+}
+
+h2{
+    font-size: 24px;
+    background-color: #ebebeb;
+    font-weight: bold;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.articulos{
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion{
+    font-size: 16px;
+    color: #666;
+}
+
+
+.productosVenta{
+   width: 80%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.descrProducto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    border-top: 1px solid #ebebeb; /*consigna clase 19*/
+    background-color: white;
+    padding: 10px;    /*consigna clase 19*/
+    position: relative;
+}
+/*esto es consigna clase 20*/
+.descrProducto i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
     background-color: #FFF;
-    border: 1px solid #000;
-    color: darkgrey;
-    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
 }
+
+.descrProducto div p{
+    text-align: left;
+    margin: 3px;
+}
+
+.precio{
+    font-size: 18px;
+    display: inline-block;
+    width: 50%;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    display: inline-block;
+    width: 50%;
+    margin-left: 0px;
+}
+
+
+
+
+/*footer*/
+.footer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.contenedorFooter{
+    margin-top: 40px;
+    margin-right: 20px;
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+}
+
+.contenedorFooter p i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+    transition-duration: 250ms;
+}
+
+.descripcionProducto{
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-end;
+    opacity: 0;
+}
+
+
+h4{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+/*mobile*/
+
+@media (min-width: 0px) and (max-width:361px){
+    main{
+        background-color: #ebebeb;
+    }
+
+    .main-navbar{
+        display: none;
+    }
+
+    .articulos{
+        align-items: center;
+        grid-template-columns: repeat(1, 80vw);
+    }
+
+    .descripcionProducto{
+        display: none;
+    }
+ 
+    .buttonForm{
+        height: 7vw;
+        width: 9%;
+        
+    }
+   
+}
+
+/*tablet y desktop*/
+
+@media (min-width: 361px) and (max-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+
+    .productosVenta{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .articulos{
+        grid-template-columns: repeat(2, 50vw);
+    }
+
+    .descripcionProducto{
+        display: block;
+        opacity: 1.0;
+    }
+}
+
+     /*colocar registercontainer y login container*/
+    
+    /*.buttonForm{
+        height: 7vw;
+        width: 9%;
+    }
+}*/
+
+
+@media (min-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+
+    .articulos{
+        grid-template-columns: repeat(4, 25vw);
+    }
+
+    .left-navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    .rigth-navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    .productosVenta:hover{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        transition-duration: 999ms;
+    }
+    .productosVenta:hover .descrProducto .descripcionProducto{
+        opacity: 1.0;
+        transition-duration: 333ms;
+    }
+    .productosVenta:hover .descrProducto i{
+        transform: rotateZ(-90deg);
+        transition-duration: 750ms;
+    }
+
+    .nav-search{
+        padding-left: 20px;
+        width: 30vw;
+        height: 30px;
+    }
+
+    .search{
+        width: 90%;
+        height: 4vw;
+    }
+
+    .buttonForm {
+        height: 4vw;
+        width: 9%;
+    }
+
+    .buttonForm i{
+        height: 100%;
+    }
+
+    .copy-header{
+        width: 32vw;
+    }
+
+    img.logo{
+        height: auto;
+        width: 33vw;
+    }
+
+    .contenedorFooter:hover p i{
+        font-size: 2em;
+        color: #39b54a;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:800px){
+    .precio{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 800px) and (max-width:961px){
+    .precio{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 961px){
+    .precio{
+        font-size: 18px;
+}
+}
+
+
+/*.barra-buscador {
+    width: 99%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2vw;
+    border-radius: 10 px;
+    border: 0px;
+}
+.buscador {
+    width: 49vw;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+
+/*
+.logo{
+    max-width: 200px;
+}
+*/
+
+/*reemplace por el Buttom
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 10px 0 20px 0px;
+    padding: 10px;
+    
+    }
+*/
